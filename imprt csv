@@ -1,0 +1,15 @@
+import csv
+
+
+COL_NAMES =['NAME' ,'RRN','Branch','CGPA','DATE','TIME']
+name=input("enter your name:")
+RRN=input("enter your RRn:")
+Branch=input("enter your branch:")
+
+CGPA = input("Enter your CGPA: ")
+
+
+attendence=[name,RRN,Branch,CGPA]
+with open(attendence,'w')as csvfile:
+ writer=csv.writer(csvfile)
+ writer.writerow(attendence)
